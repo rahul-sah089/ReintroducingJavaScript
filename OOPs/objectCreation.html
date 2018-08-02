@@ -1,0 +1,44 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            //Ways of creating object
+            //1) Using Object() constructor
+            var obj1 = new Object();
+            obj1.firstName = "Rahul";
+            obj1.lastName = "Sah";
+            console.log(obj1);
+            //2) using Object.create() method
+            //This method creates a new object extending the prototype object passed as a parameter.
+            var obj2 = Object.create(null);
+            obj2.firstName = "Arijit";
+            obj2.secondName = "Singh";
+            console.log(obj2);
+            //3) Using the bracket's syntactical sugar
+            var obj3 = {"firstName":"Rahul","secondName":"Singh"};
+            console.log(obj3);
+            //4) Using function constructor
+            function Person(firstName,secondName){
+                this.firstName = firstName;
+                this.secondName = secondName;
+
+                this.getFullName = function(){
+                    console.log("The name is "+this.firstName+" "+this.secondName);
+                }
+            }
+
+            var  person1 = new Person("rahul","sah");
+            person1.getFullName();
+            console.log(person1);
+
+            
+
+            
+
+
+
+        </script>
+    </body>
+</html>

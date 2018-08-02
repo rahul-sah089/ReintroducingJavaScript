@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script>
+            function Person(firstName,lastName){
+                this.firstName = firstName;
+                this.lastName = lastName;
+                this.getFullName = function(){
+                    return ("My name is "+this.firstName+" "+this.lastName);
+                }
+            }
+
+            var person1 = new Person("Rahul","Sah");
+            var person2 = new Person("Shivam","Singh");
+            console.log(person1.getFullName());
+            console.log(person2.getFullName());
+        </script>
+    </head>
+    <body>
+        <h1>Hello World!!</h1>
+    </body>
+
+</html>
